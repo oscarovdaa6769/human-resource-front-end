@@ -6,31 +6,31 @@
         <div class="footer-nav flex flex-col items-start justify-start gap-4">
           <h2 class=" font-black">For Candidates</h2>
           <NuxtLink to="/overview">Overview</NuxtLink>
-          <NuxtLink to="/startup-job">Startup Jobs</NuxtLink>
-          <NuxtLink to="/web3-job">Web3 Jobs</NuxtLink>
+          <NuxtLink to="/startup-jobs">Startup Jobs</NuxtLink>
+          <NuxtLink to="/web3-jobs">Web3 Jobs</NuxtLink>
           <NuxtLink to="/featured">Featured</NuxtLink>
           <NuxtLink to="/salary-calculator">Salary Calculator</NuxtLink>
           <NuxtLink to="/startup-hiring-data">Startup Hiring Data</NuxtLink>
-          <NuxtLink to="/tech-startup">Tech Startups</NuxtLink>
+          <NuxtLink to="/tech-startups">Tech Startups</NuxtLink>
           <NuxtLink to="/remote">Remote</NuxtLink>
         </div>
         <div class="footer-nav flex flex-col items-start justify-start gap-4">
           <h2 class=" font-black">For Recruiters</h2>
           <NuxtLink to="/overview">Overview</NuxtLink>
-          <NuxtLink to="/startup-job">Recruit Pro</NuxtLink>
-          <NuxtLink to="/web3-job">Curated</NuxtLink>
-          <NuxtLink to="/featured">Hire Developers</NuxtLink>
-          <NuxtLink to="/salary-calculator">Pricing</NuxtLink>
+          <NuxtLink to="/recruit-pro">Recruit Pro</NuxtLink>
+          <NuxtLink to="/curated">Curated</NuxtLink>
+          <NuxtLink to="/hire-developers">Hire Developers</NuxtLink>
+          <NuxtLink to="/pricing">Pricing</NuxtLink>
         </div>
         <div class="footer-nav flex flex-col items-start justify-start gap-4">
           <h2 class=" font-black">Company</h2>
-          <NuxtLink to="/overview">About</NuxtLink>
-          <NuxtLink to="/startup-job">Help</NuxtLink>
-          <NuxtLink to="/web3-job">Blog</NuxtLink>
-          <NuxtLink to="/featured">Terms & Risks</NuxtLink>
-          <NuxtLink to="/salary-calculator">Privacy & Cookies</NuxtLink>
-          <NuxtLink to="/salary-calculator">Trust</NuxtLink>
-          <NuxtLink to="/salary-calculator">Platform Status</NuxtLink>
+          <NuxtLink to="/about">About</NuxtLink>
+          <NuxtLink to="/help">Help</NuxtLink>
+          <NuxtLink to="/blog">Blog</NuxtLink>
+          <NuxtLink to="/terms-&-risks">Terms & Risks</NuxtLink>
+          <NuxtLink to="/privacy-&-cookies">Privacy & Cookies</NuxtLink>
+          <NuxtLink to="/trust">Trust</NuxtLink>
+          <NuxtLink to="/platform-status">Platform Status</NuxtLink>
         </div>
       </div>
     </div>
@@ -45,13 +45,13 @@
       <NuxtLink to="/" class="underline hover:text-primary">Cookie Preferences</NuxtLink>
       <div class="flex gap-1">
         <p>Browse by:</p>
-        <NuxtLink to="/" class="hover:text-primary hover:underline">Jobs</NuxtLink>,
-        <NuxtLink to="/" class="hover:text-primary hover:underline">Remote Jobs</NuxtLink>,
-        <NuxtLink to="/" class="hover:text-primary hover:underline">Locations</NuxtLink>,
-        <NuxtLink to="/" class="hover:text-primary hover:underline">Startups</NuxtLink>,
-        <NuxtLink to="/" class="hover:text-primary hover:underline">Startups Hiring</NuxtLink>,
-        <NuxtLink to="/" class="hover:text-primary hover:underline">Industries</NuxtLink>,
-        <NuxtLink to="/" class="hover:text-primary hover:underline">Tech Hubs</NuxtLink>
+        <NuxtLink to="/jobs" class="hover:text-primary hover:underline">Jobs</NuxtLink>,
+        <NuxtLink to="/remote-jobs" class="hover:text-primary hover:underline">Remote Jobs</NuxtLink>,
+        <NuxtLink to="/locations" class="hover:text-primary hover:underline">Locations</NuxtLink>,
+        <NuxtLink to="/startups" class="hover:text-primary hover:underline">Startups</NuxtLink>,
+        <NuxtLink to="/startups-hiring" class="hover:text-primary hover:underline">Startups Hiring</NuxtLink>,
+        <NuxtLink to="/industries" class="hover:text-primary hover:underline">Industries</NuxtLink>,
+        <NuxtLink to="/tect-hubs" class="hover:text-primary hover:underline">Tech Hubs</NuxtLink>
       </div>
     </div>
   </div>
