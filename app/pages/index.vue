@@ -1,7 +1,5 @@
 <template>
- 
- <section class="w-full h-100px bg-blue-300">
-        <h1 class="text-2xl text-black"> this a  </h1>
- </section>
-
+  <div class="w-7xl m-auto text-center">
+    <h2>homepage</h2>
+  </div>
 </template>

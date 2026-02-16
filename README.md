@@ -1,5 +1,22 @@
 # Nuxt Starter Template
 
+
+
+
+Ensure you have the following software versions
+installed on your system:
+
+**Node.js** : 24
+**Tailwind** : 4.x
+**strapi** : 5.x
+**nuxt** : 4.x
+
+
+
+## Installation Instructions 
+
+
+
 [![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
 
 Use this template to get started with [Nuxt UI](https://ui.nuxt.com) quickly.
@@ -58,3 +75,9 @@ pnpm preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+
+# Version of Tools
+
+- **Nuxt**: 4.3.1
+- **Tailwind**: 4.1.18
