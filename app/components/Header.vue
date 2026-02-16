@@ -12,6 +12,7 @@
         <NuxtLink to="/login" class=" border-2 border-primary text-primary rounded-full px-4 py-2 hover:border-accent hover:bg-accent hover:text-[#fff] transition-all duration-300 ease-in-out">Login</NuxtLink>
         <NuxtLink to="/sign-up" class="text-[#000] hover:text-[#fff] border-primary bg-primary hover:bg-accent hover:border-accent rounded-full px-4 py-2 transition-all duration-300 ease-in-out">Sign Up</NuxtLink>
       </div>
+      <div class="bg-primary"></div>
     </div>
   </div>
 </template>
