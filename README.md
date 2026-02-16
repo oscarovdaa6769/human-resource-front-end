@@ -58,3 +58,9 @@ pnpm preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+
+# Version of Tools
+
+- **Nuxt**: 4.3.1
+- **Tailwind**: 4.1.18
