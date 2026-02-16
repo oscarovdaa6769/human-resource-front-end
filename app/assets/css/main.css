@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: "Epilogue", sans-serif;
+
+  --color-primary: #7AE2CF;
+  --color-secondary: #06202B;
+  --color-accent: #077A7D;
+}
+
+.header-nav a {
+  transition: all 300ms ease;
+}
+
+.header-nav a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.footer-nav a {
+  transition: all 300ms ease;
+}
+
+.footer-nav a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
