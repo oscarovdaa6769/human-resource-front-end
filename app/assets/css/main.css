@@ -5,8 +5,8 @@
   --font-sans: "Epilogue", sans-serif;
 
   --color-primary: #7AE2CF;
-  --color-secondary: #06202B;
   --color-accent: #077A7D;
+  --color-secondary: #0B3242;
 }
 
 .header-nav a {
@@ -25,4 +25,13 @@
 .footer-nav a:hover {
   color: var(--color-primary);
   text-decoration: underline;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.banner {
+  margin-top: 100px;
 }
