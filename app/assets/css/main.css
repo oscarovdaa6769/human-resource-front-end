@@ -26,3 +26,12 @@
   color: var(--color-primary);
   text-decoration: underline;
 }
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.banner {
+  margin-top: 100px;
+}
