@@ -202,8 +202,8 @@ import baseBtn from '~/components/baseBtn.vue';
           <p>We’re an all-in-one place for hiring talent across the globe. Our tools include sourcing, job listings, employer branding, a free applicant management system, and our newest solution: AI-powered sourcing with <NuxtLink to="/people-resolution-ai" class="underline hover:text-primary">People Resolution AI.</NuxtLink></p>
         </div>
         <div class="flex flex-col gap-2">
-          <h4 class="text-xl font-medium">What is the history of Wellfound?</h4>
-          <p>Wellfound was founded in 2013 as a product within AngelList. It served AngelList's broader vision to serve startups by helping them build their teams. We started as a simple list connecting founders and engineers. Since then, we’ve spent the past decade fostering the #1 community of startups and startup-seeking talent. Today, we work with tens of thousands of companies, from early-stage startups to public companies, and we are proud to match them with our millions of job seekers.</p>
+          <h4 class="text-xl font-medium">What is the history of People Resolution?</h4>
+          <p>People Resolution was founded in 2013 as a product within AngelList. It served AngelList's broader vision to serve startups by helping them build their teams. We started as a simple list connecting founders and engineers. Since then, we’ve spent the past decade fostering the #1 community of startups and startup-seeking talent. Today, we work with tens of thousands of companies, from early-stage startups to public companies, and we are proud to match them with our millions of job seekers.</p>
         </div>
         <div class="flex flex-col gap-2">
           <h4 class="text-xl font-medium">How do I get started?</h4>
