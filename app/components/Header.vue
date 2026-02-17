@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-secondary fixed top-0 border-b-1 border-accent">
+  <div class="w-full bg-secondary fixed top-0 border-b-1 border-accent z-[1000]">
     <div class="flex justify-between items-center py-8 w-7xl m-auto">
       <NuxtLink to="/"><img src="/assets/images/logo brand.png" alt="People-Resolution"></NuxtLink>
       <nav class="header-nav flex gap-4">
