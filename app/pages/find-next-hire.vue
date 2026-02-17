@@ -1,3 +1,7 @@
+<script setup="ts">
+import baseBtn from '~/components/baseBtn.vue';
+</script>
+
 <template>
   <div class="w-full banner">
     <div class="container pt-10 pb-10 flex flex-col items-center gap-10">
@@ -84,7 +88,7 @@
         <img src="/assets/images/find next hire 5.webp" alt="World of Talent">
       </div>
       <div class="flex flex-col gap-4">
-        <span class="uppercase font-black text-primary flex items-center gap-2">wellfound:ai <Icon name="icon-park-twotone:add-music" class="text-2xl"/> autopilot</span>
+        <span class="uppercase font-black text-primary flex items-center gap-2">People Resolution ai <Icon name="icon-park-twotone:add-music" class="text-2xl"/> autopilot</span>
         <h2 class="font-black text-6xl">Stop scrolling, start hiring</h2>
         <p>We’ll review hundreds of profiles each week and reach out to the best fits with hyper-personalized templates. When interested candidates respond, we’ll handle the back-and-forth. All that’s needed from you is one-click to approve and they’ll be instantly booked on your calendar. <NuxtLink to="/learn-more" class="underline hover:text-primary">Learn more</NuxtLink></p>
         <NuxtLink to="/discover" class="font-semibold text-primary flex items-center gap-2 group">Schedule a demo <Icon name="mi:arrow-right" class="transition-transform duration-300 group-hover:translate-x-2"/></NuxtLink>
@@ -92,25 +96,122 @@
     </div>
   </div>
   <div class="w-full">
-    <div class="container py-15">
+    <div class="container py-30">
       <div class="flex flex-col gap-8">
         <span class="uppercase font-black text-primary flex items-center gap-2">Find the right plan for you</span>
         <h2 class="font-black text-6xl w-[50%]">Flexible solutions for every stage of your hiring journey</h2>
         <p>From free job posting and inbound applicants to advanced, all-in-one solutions that take care of everything for you — we provide every level of support your team may need, no matter the scale.</p>
         <p>Looking for something a bit more specific? We're happy to create a custom solution fit for your team.</p>
         <p class="flex items-center gap-2">To find you the best option, we just need a few details <Icon name="mi:arrow-right"/></p>
-        <div class="rounded-lg bg-highlihgt shadow-[0_0_15px_primary] shadow-primary p-25">
-          <div class="grid grid-cols-[40%_60%] border-1 border-accent rounded-sm">
+        <div class="rounded-3xl bg-highlihgt shadow-[0_0_15px_primary] shadow-primary p-25">
+          <div class="grid grid-cols-[40%_60%] border-1 border-accent rounded-xl shadow-primary shadow-[0_0_5px]">
             <div class="flex flex-col items-center">
               <div class="p-15 ">
                 <img src="/assets/images/logo brand.png" alt="People-Resolution">
               </div>
               <div class="px-15 flex flex-col gap-4">
-                <h2>Schedule call with Wellfound</h2>
+                <h2 class="text-xl font-semibold">Schedule call with Wellfound</h2>
                 <p>Please tell us a bit about you so we can route you to the right person.</p>
               </div>
             </div>
+            <div class="p-15 border-l-1 border-primary flex flex-col gap-2">
+              <div class="flex flex-col gap-8">
+                <div class="flex flex-col gap-2">
+                  <span class="font-medium">What location are you primarily hiring in?</span>
+                  <label class="flex gap-4 items-center cursor-pointer">
+                    <input type="radio" name="location" class="accent-primary w-4 h-4 cursor-pointer">
+                    <span>United States & Canada</span>
+                  </label>
+                  <label class="flex gap-4 items-center cursor-pointer">
+                    <input type="radio" name="location" class="accent-primary w-4 h-4 cursor-pointer">
+                    <span>India</span>
+                  </label>
+                  <label class="flex gap-4 items-center cursor-pointer">
+                    <input type="radio" name="location" class="accent-primary w-4 h-4 cursor-pointer">
+                    <span>Europe</span>
+                  </label>
+                  <label class="flex gap-4 items-center cursor-pointer">
+                    <input type="radio" name="location" class="accent-primary w-4 h-4 cursor-pointer">
+                    <span>South America</span>
+                  </label>
+                  <label class="flex gap-4 items-center cursor-pointer">
+                    <input type="radio" name="location" class="accent-primary w-4 h-4 cursor-pointer">
+                    <span>Other</span>
+                  </label>
+                  <label class="flex gap-4 items-center cursor-pointer">
+                    <input type="radio" name="location" class="accent-primary w-4 h-4 cursor-pointer">
+                    <span>Anywhere</span>
+                  </label>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <span class="font-medium">What is your role?</span>
+                  <label class="flex gap-4 items-center cursor-pointer">
+                    <input type="radio" name="location" class="accent-primary w-4 h-4 cursor-pointer">
+                    <span>Founder / executive</span>
+                  </label>
+                  <label class="flex gap-4 items-center cursor-pointer">
+                    <input type="radio" name="location" class="accent-primary w-4 h-4 cursor-pointer">
+                    <span>Hiring manager</span>
+                  </label>
+                  <label class="flex gap-4 items-center cursor-pointer">
+                    <input type="radio" name="location" class="accent-primary w-4 h-4 cursor-pointer">
+                    <span>In-house recruiter / HR</span>
+                  </label>
+                  <label class="flex gap-4 items-center cursor-pointer">
+                    <input type="radio" name="location" class="accent-primary w-4 h-4 cursor-pointer">
+                    <span>Agency recruiter</span>
+                  </label>
+                  <label class="flex gap-4 items-center cursor-pointer">
+                    <input type="radio" name="location" class="accent-primary w-4 h-4 cursor-pointer">
+                    <span>Other</span>
+                  </label>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <span class="font-medium">What is your company headcount?</span>
+                  <label class="flex gap-4 items-center cursor-pointer">
+                    <input type="radio" name="location" class="accent-primary w-4 h-4 cursor-pointer">
+                    <span>1-10</span>
+                  </label>
+                  <label class="flex gap-4 items-center cursor-pointer">
+                    <input type="radio" name="location" class="accent-primary w-4 h-4 cursor-pointer">
+                    <span>11-50</span>
+                  </label>
+                  <label class="flex gap-4 items-center cursor-pointer">
+                    <input type="radio" name="location" class="accent-primary w-4 h-4 cursor-pointer">
+                    <span>51-200</span>
+                  </label>
+                  <label class="flex gap-4 items-center cursor-pointer">
+                    <input type="radio" name="location" class="accent-primary w-4 h-4 cursor-pointer">
+                    <span>200+</span>
+                  </label>
+                </div>
+                <baseBtn name="Submit" />
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-full bg-highlight">
+    <div class="container py-15">
+      <div class="flex flex-col gap-8">
+        <h2 class="text-3xl font-bold">FAQ</h2>
+        <div class="flex flex-col gap-2">
+          <h4 class="text-xl font-medium">What types of services does Wellfound provide?</h4>
+          <p>We’re an all-in-one place for hiring talent across the globe. Our tools include sourcing, job listings, employer branding, a free applicant management system, and our newest solution: AI-powered sourcing with <NuxtLink to="/people-resolution-ai" class="underline hover:text-primary">People Resolution AI.</NuxtLink></p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h4 class="text-xl font-medium">What is the history of Wellfound?</h4>
+          <p>Wellfound was founded in 2013 as a product within AngelList. It served AngelList's broader vision to serve startups by helping them build their teams. We started as a simple list connecting founders and engineers. Since then, we’ve spent the past decade fostering the #1 community of startups and startup-seeking talent. Today, we work with tens of thousands of companies, from early-stage startups to public companies, and we are proud to match them with our millions of job seekers.</p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h4 class="text-xl font-medium">How do I get started?</h4>
+          <p>Check out our comprehensive <NuxtLink to="/help-guide" class="underline hover:text-primary">help guide</NuxtLink> on how to get started recruiting. You can also reach out to our team at <NuxtLink to="/" class="underline hover:text-primary">talent@people-resolution.com</NuxtLink> and we’ll help you set up your account.</p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h4 class="text-xl font-medium">Have more questions?</h4>
+          <p>For more FAQ’s, check out our <NuxtLink to="/" class="underline hover:text-primary">general guide</NuxtLink> on all things Wellfound. Or, <NuxtLink to="/" class="underline hover:text-primary">schedule a call</NuxtLink> with our team and we’ll be happy to help.</p>
         </div>
       </div>
     </div>

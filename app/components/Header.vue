@@ -1,3 +1,7 @@
+<script setup="ts">
+import baseBtn from './baseBtn.vue';
+</script>
+
 <template>
   <div class="w-full bg-secondary fixed top-0 border-b-1 border-accent z-[1000]">
     <div class="flex justify-between items-center py-8 w-7xl m-auto">
@@ -10,7 +14,7 @@
       </nav>
       <div class="flex gap-2 items-center">
         <NuxtLink to="/login" class=" border-2 border-primary text-primary rounded-full px-4 py-2 hover:border-accent hover:bg-accent hover:text-[#fff] transition-all duration-300 ease-in-out">Login</NuxtLink>
-        <NuxtLink to="/sign-up" class="text-[#000] hover:text-[#fff] border-2 border-primary bg-primary hover:bg-accent hover:border-accent rounded-full px-4 py-2 transition-all duration-300 ease-in-out">Sign Up</NuxtLink>
+        <baseBtn name="Sign up" />
       </div>
     </div>
   </div>
