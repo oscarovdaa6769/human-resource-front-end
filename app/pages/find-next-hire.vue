@@ -78,4 +78,41 @@
       </div>
     </div>
   </div>
+  <div class="w-full bg-highlight">
+    <div class="container grid grid-cols-2 items-center gap-4">
+      <div class="p-15">
+        <img src="/assets/images/find next hire 5.webp" alt="World of Talent">
+      </div>
+      <div class="flex flex-col gap-4">
+        <span class="uppercase font-black text-primary flex items-center gap-2">wellfound:ai <Icon name="icon-park-twotone:add-music" class="text-2xl"/> autopilot</span>
+        <h2 class="font-black text-6xl">Stop scrolling, start hiring</h2>
+        <p>We’ll review hundreds of profiles each week and reach out to the best fits with hyper-personalized templates. When interested candidates respond, we’ll handle the back-and-forth. All that’s needed from you is one-click to approve and they’ll be instantly booked on your calendar. <NuxtLink to="/learn-more" class="underline hover:text-primary">Learn more</NuxtLink></p>
+        <NuxtLink to="/discover" class="font-semibold text-primary flex items-center gap-2 group">Schedule a demo <Icon name="mi:arrow-right" class="transition-transform duration-300 group-hover:translate-x-2"/></NuxtLink>
+      </div>
+    </div>
+  </div>
+  <div class="w-full">
+    <div class="container py-15">
+      <div class="flex flex-col gap-8">
+        <span class="uppercase font-black text-primary flex items-center gap-2">Find the right plan for you</span>
+        <h2 class="font-black text-6xl w-[50%]">Flexible solutions for every stage of your hiring journey</h2>
+        <p>From free job posting and inbound applicants to advanced, all-in-one solutions that take care of everything for you — we provide every level of support your team may need, no matter the scale.</p>
+        <p>Looking for something a bit more specific? We're happy to create a custom solution fit for your team.</p>
+        <p class="flex items-center gap-2">To find you the best option, we just need a few details <Icon name="mi:arrow-right"/></p>
+        <div class="rounded-lg bg-highlihgt shadow-[0_0_15px_primary] shadow-primary p-25">
+          <div class="grid grid-cols-[40%_60%] border-1 border-accent rounded-sm">
+            <div class="flex flex-col items-center">
+              <div class="p-15 ">
+                <img src="/assets/images/logo brand.png" alt="People-Resolution">
+              </div>
+              <div class="px-15 flex flex-col gap-4">
+                <h2>Schedule call with Wellfound</h2>
+                <p>Please tell us a bit about you so we can route you to the right person.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
