@@ -195,6 +195,188 @@
        
         </div>
     </div>
+
+    <div class="w-full banner">
+        <div class="max-w-7xl mx-auto">
+      <div class="flex justify-between items-center mb-10">
+        <h3 class="text-4xl text-primary font-bold tracking-tight">From the blog</h3>
+    
+      </div>
+
+      <div class="space-y-8">
+        <div v-for="(post, index) in blogPosts" :key="index" class="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 border-b border-gray-100 pb-8 last:border-0">
+          <div class="md:w-3/6 text-sm font-semibold text-gray-600">
+            <h4 class="text-2xl font-bold tracking-tight  text-white  hover:text-primary cursor-pointer">
+              {{ post.title }}
+            </h4>
+          </div>
+          <div class="md:w-2/6 text-gray-100 leading-relaxed text-sm">
+            {{ post.description }}
+          </div>
+          <div class="flex-shrink-0">
+            <button class="w-12 h-12 rounded-full bg-primary-100  text-secondary flex items-center justify-center  transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
     
 
+
+
+
+    <div class="w-full banner">
+        
+        <div class="w-full bg-accent py-6 ">
+            <div class="container mx-auto flex gap-4 items-center justify-center">
+
+            <!-- Dropdown Item -->
+            <div
+                v-for="(menu, index) in menus"
+                :key="index"
+                class="relative"
+            >
+                <!-- Button -->
+                <button
+                @click="toggle(index)"
+                class="flex items-center gap-2 px-6 py-3 rounded-xl border border-white/30 text-white hover:bg-white/10 transition"
+                >
+                {{ menu.title }}
+                <svg
+                    :class="{ 'rotate-180': openIndex === index }"
+                    class="w-4 h-4 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+                </button>
+
+                <!-- Dropdown -->
+                <div
+                v-if="openIndex === index"
+                class="absolute left-0 mt-3 w-80 bg-gray-100 text-gray-800 rounded-2xl shadow-lg p-4 z-50"
+                >
+                <ul class="space-y-2">
+                    <li
+                    v-for="item in menu.items"
+                    :key="item"
+                    class="px-3 py-2 rounded-lg hover:bg-gray-200 hover:text-accent cursor-pointer"
+                    >
+                    {{ item }}
+                    </li>
+                </ul>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    
 </template>
+
+<script setup>
+import { ref } from "vue";
+
+const openIndex = ref(null);
+
+const toggle = (index) => {
+  openIndex.value = openIndex.value === index ? null : index;
+};
+
+const menus = [
+  {
+    title: "Job Collections",
+    items: [
+      "Remote First Future Jobs",
+      "Jobs for Bootcamp Grads",
+      "Junior Software Engineer Jobs",
+      "Crypto Startups to Watch Out for",
+      "Blockchain Startups That Are Hiring",
+      "Companies Hiring Amidst Layoffs",
+      "Hot Consumer Fintech Startups",
+      "Y Combinator Startup Jobs",
+      "Startup Jobs in Bay Area",
+      "Top Women-Led Startups",
+      "More Job Collections",
+    ],
+  },
+  {
+    title: "Remote Jobs",
+    items: [
+      "Remote Engineering Jobs",
+      "Remote Design Jobs",
+      "Remote Marketing Jobs",
+      "Remote Product Jobs",
+    ],
+  },
+  {
+    title: "Jobs by Location",
+    items: [
+      "USA Jobs",
+      "Europe Jobs",
+      "Asia Jobs",
+      "Remote Worldwide",
+    ],
+  },
+  {
+    title: "Jobs by Role",
+    items: [
+      "Frontend Developer",
+      "Backend Developer",
+      "Fullstack Developer",
+      "UI/UX Designer",
+    ],
+  },
+  {
+    title: "Jobs by Role & Location",
+    items: [
+      "Frontend in USA",
+      "Backend in Europe",
+      "Designer in Asia",
+      "Remote Fullstack",
+    ],
+  },
+];
+
+
+
+
+
+
+
+
+const blogPosts = [
+  {
+    type: "Blog Post",
+    title: "30 Questions to Ask Before Joining a Startup",
+    description: "You're trying to evaluate the company while still impressing your interviewers, and that balance can be tricky..."
+  },
+  {
+    type: "Job Collection",
+    title: "18 Innovative Space Startups Hiring Now",
+    description: "Few tech sectors are capturing the public's collective imagination as much as space. Privatized spaceflight, or \"NewSpace,\" is attracting..."
+  },
+   {
+    type: "Job Collection",
+    title: "18 Innovative Space Startups Hiring Now",
+    description: "Few tech sectors are capturing the public's collective imagination as much as space. Privatized spaceflight, or \"NewSpace,\" is attracting..."
+  },
+   {
+    type: "Job Collection",
+    title: "18 Innovative Space Startups Hiring Now",
+    description: "Few tech sectors are capturing the public's collective imagination as much as space. Privatized spaceflight, or \"NewSpace,\" is attracting..."
+  },
+  {
+    type: "Job Collection",
+    title: "19 Hot Crypto Startups Hiring Remotely in 2022",
+    description: "Either Crypto has a great PR team, or the internet-based medium of exchange is truly taking the world by storm..."
+  }
+  
+];
+</script>
