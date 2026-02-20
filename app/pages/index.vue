@@ -218,7 +218,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <div class="bg-secondary p-8 rounded-2xl flex flex-col gap-4 ">
+        <div class="bg-secondary p-8 rounded-2xl flex flex-col gap-4  ">
          <div class="w-14 h-14 flex items-center justify-center rounded-full bg-primary-100  text-accent"> 
           <img
               src="https://i.pinimg.com/736x/18/5f/08/185f08b480520518e9407d20a035df73.jpg"
@@ -365,6 +365,55 @@
       </div>
     </div>
   </div>
+
+  <div class="w-full banner">
+        
+        <div class="w-full bg-accent py-6 ">
+            <div class="container mx-auto flex gap-4 items-center justify-center">
+
+            <!-- Dropdown Item -->
+            <div
+                v-for="(menu, index) in menus"
+                :key="index"
+                class="relative"
+            >
+                <!-- Button -->
+                <button
+                @click="toggle(index)"
+                class="flex items-center gap-2 px-6 py-3 rounded-xl border border-white/30 text-white hover:bg-white/10 transition"
+                >
+                {{ menu.title }}
+                <svg
+                    :class="{ 'rotate-180': openIndex === index }"
+                    class="w-4 h-4 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+                </button>
+
+                <!-- Dropdown -->
+                <div
+                v-if="openIndex === index"
+                class="absolute left-0 mt-3 w-80 bg-gray-100 text-gray-800 rounded-2xl shadow-lg p-4 z-50"
+                >
+                <ul class="space-y-2">
+                    <li
+                    v-for="item in menu.items"
+                    :key="item"
+                    class="px-3 py-2 rounded-lg hover:bg-gray-200 hover:text-accent cursor-pointer"
+                    >
+                    {{ item }}
+                    </li>
+                </ul>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
 </template>
 
 <script setup> 
@@ -397,5 +446,69 @@ const blogPosts = [
   
 ];
 
+
+
+import { ref } from "vue";
+
+const openIndex = ref(null);
+
+const toggle = (index) => {
+  openIndex.value = openIndex.value === index ? null : index;
+};
+
+const menus = [
+  {
+    title: "Job Collections",
+    items: [
+      "Remote First Future Jobs",
+      "Jobs for Bootcamp Grads",
+      "Junior Software Engineer Jobs",
+      "Crypto Startups to Watch Out for",
+      "Blockchain Startups That Are Hiring",
+      "Companies Hiring Amidst Layoffs",
+      "Hot Consumer Fintech Startups",
+      "Y Combinator Startup Jobs",
+      "Startup Jobs in Bay Area",
+      "Top Women-Led Startups",
+      "More Job Collections",
+    ],
+  },
+  {
+    title: "Remote Jobs",
+    items: [
+      "Remote Engineering Jobs",
+      "Remote Design Jobs",
+      "Remote Marketing Jobs",
+      "Remote Product Jobs",
+    ],
+  },
+  {
+    title: "Jobs by Location",
+    items: [
+      "USA Jobs",
+      "Europe Jobs",
+      "Asia Jobs",
+      "Remote Worldwide",
+    ],
+  },
+  {
+    title: "Jobs by Role",
+    items: [
+      "Frontend Developer",
+      "Backend Developer",
+      "Fullstack Developer",
+      "UI/UX Designer",
+    ],
+  },
+  {
+    title: "Jobs by Role & Location",
+    items: [
+      "Frontend in USA",
+      "Backend in Europe",
+      "Designer in Asia",
+      "Remote Fullstack",
+    ],
+  },
+];
 </script>
 
