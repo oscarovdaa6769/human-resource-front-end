@@ -83,7 +83,6 @@ const handleLogin = () => {
              </NuxtLink>
             </div>
 
-CHHEUN NYTA, [2/20/26 7:48 AM]
 <div class="flex items-center justify-between text-sm">
               <a href="#" class="text-gray-400 hover:text-teal-400 transition-colors">Forgot Password?</a>
               <div class="flex items-center gap-3">
