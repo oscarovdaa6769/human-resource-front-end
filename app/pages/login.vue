@@ -21,19 +21,19 @@ const handleLogin = () => {
     <div class="flex flex-col md:flex-row w-full max-w-6xl bg-[#1c252e] rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/5">
       
       <div class="relative w-full md:w-1/2 min-h-[400px] flex flex-col justify-between p-12 text-white">
-        <div class="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80" 
-            alt="HR Team" 
-            class="w-full h-full object-cover opacity-40"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-[#1c252e] via-transparent to-black/20"></div>
-        </div>
-
-        <div class="relative z-10">
-          <div class="flex items-center gap-2 mb-2">
+          <div class="absolute inset-0 z-0">
+            <img 
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80" 
+              alt="HR Team" 
+              class="w-full h-full object-cover opacity-40"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#1c252e] via-transparent to-black/20"></div>
           </div>
-        </div>
+
+          <div class="relative z-10">
+            <div class="flex items-center gap-2 mb-2">
+            </div>
+      </div>
 
         <div class="relative z-10">
           <h2 class="text-4xl md:text-5xl font-semibold leading-tight mb-6 italic">
@@ -82,6 +82,7 @@ const handleLogin = () => {
               <NuxtLink to="/button" type="button" class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600">
              </NuxtLink>
             </div>
+
 
 <div class="flex items-center justify-between text-sm">
               <a href="#" class="text-gray-400 hover:text-teal-400 transition-colors">Forgot Password?</a>
