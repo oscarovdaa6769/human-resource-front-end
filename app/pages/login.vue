@@ -1,5 +1,7 @@
-CHHEUN NYTA, [2/20/26 7:48 AM]
+
 <script setup>
+
+
 import { ref } from 'vue';
 
 const email = ref('');
@@ -20,103 +22,84 @@ const handleLogin = () => {
     
     <div class="flex flex-col md:flex-row w-full max-w-6xl bg-[#1c252e] rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/5">
       
-      <div class="relative w-full md:w-1/2 min-h-[400px] flex flex-col justify-between p-12 text-white">
+      <div class="relative w-full md:w-1/2 min-h-[500px] flex flex-col justify-between p-12 text-white">
           <div class="absolute inset-0 z-0">
             <img 
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80" 
               alt="HR Team" 
-              class="w-full h-full object-cover opacity-40"
+              class="w-full h-full object-cover" 
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-[#1c252e] via-transparent to-black/20"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#1c252e] via-black/20 to-black/40"></div>
           </div>
 
           <div class="relative z-10">
-            <div class="flex items-center gap-2 mb-2">
-            </div>
-      </div>
-
-        <div class="relative z-10">
-          <h2 class="text-4xl md:text-5xl font-semibold leading-tight mb-6 italic">
-            Find the job made for you
-          </h2>
-          <p>Browse over 130K jobs at top companies and fast-growing startups.
-</p>
-          <div class="flex gap-2">
-            <div class="h-1.5 w-12 bg-white rounded-full"></div>
-            <div class="h-1.5 w-6 bg-white/30 rounded-full"></div>
-            <div class="h-1.5 w-6 bg-white/30 rounded-full"></div>
+            <div class="flex items-center gap-2 mb-2"></div>
           </div>
-        </div>
+
+          <div class="relative z-10">
+            <h2 class="text-4xl md:text-5xl font-semibold leading-tight mb-6 italic">
+              Find the job made for you
+            </h2>
+            <p class="text-gray-200 mb-6">Browse over 130K jobs at top companies and fast-growing startups.</p>
+            <div class="flex gap-2">
+              <div class="h-1.5 w-12 bg-white rounded-full"></div>
+              <div class="h-1.5 w-6 bg-white/30 rounded-full"></div>
+              <div class="h-1.5 w-6 bg-white/30 rounded-full"></div>
+            </div>
+          </div>
       </div>
 
-      <div class="w-full md:w-1/2 p-8 md:p-20 bg-highlight flex flex-col justify-center">
-        <div class="max-w-md mx-auto w-full text-white">
-          <header class="mb-10">
-            <h1 class="text-4xl font-bold mb-3">Welcome Back</h1>
-            <p class="text-gray-400">Find the job made for you! </p>
-          </header>
+      <div class="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-24 py-12 bg-highlight">
+        <div class="max-w-md w-full mx-auto md:ml-0">
+        
 
-          <form @submit.prevent="handleLogin" class="space-y-6">
-            <div class="relative group">
-              <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-teal-400 transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" /></svg>
-              </span>
-              <input 
-                v-model="email"
-                type="email" 
-                placeholder="Work Email" 
-                class="w-full bg-[#e8f0fe] text-gray-900 pl-12 pr-4 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all placeholder:text-gray-500"
-              />
-            </div>
+          <h2 class="text-4xl font-bold mb-2 text-primary">Welcome Back</h2>
+          <p class="text-white mb-8 font-medium">Find the job made for you!</p>
 
-            <div class="relative group ">
-              <span class="absolute left-4  top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-teal-400 transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"  stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
-              </span>
-              <input 
-                v-model="password"
-                type="password" 
-                placeholder="Password" 
-                class="w-full bg-[#e8f0fe] text-gray-900 pl-12 pr-12 py-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all placeholder:text-gray-500"
-              />
-              <NuxtLink to="/button" type="button" class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600">
-             </NuxtLink>
-            </div>
+          <NuxtLink  to="google" class="w-full flex items-center justify-center gap-3 border-2 border-accent rounded-md py-3 px-4 transition-colors mb-6">
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" class="w-5 h-5" alt="Google">
+            <span class="font-semibold  text-white">Log in with Google</span>
+          </NuxtLink>
 
+          <div class="relative flex items-center mb-6">
+            <div class="flex-grow border-t border-gray-200"></div>
+            <span class="flex-shrink mx-4 text-white text-xs uppercase tracking-widest font-semibold">or Login with Email</span>
+            <div class="flex-grow border-t border-gray-200"></div>
+          </div>
 
-<div class="flex items-center justify-between text-sm">
-              <a href="#" class="text-gray-400 hover:text-teal-400 transition-colors">Forgot Password?</a>
-              <div class="flex items-center gap-3">
+          <form @submit.prevent="handleLogin" class="space-y-4">
+            <input 
+              v-model="email"
+              type="email" 
+              placeholder="Email" 
+              class="w-full border-2 border-accent text-white rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
+            />
+            <input 
+              v-model="password"
+              type="password" 
+              placeholder="Password" 
+              class="w-full border-2 border-accent text-white rounded-md px-4 py-3 focus:outline-none focus:ring-2  focus:ring-accent  focus:border-transparent transition-all"
+            />
             
-              
-              </div>
+            <div class="text-right">
+              <a href="#" class="text-sm font-semibold text-white underline decoration-gray-400 underline-offset-4 hover:text-black">Forgot password?</a>
             </div>
-             <NuxtLink to="/Apple"  class="flex items-center justify-center  bg-teal-600 hover:bg-teal-500 text-white font-bold  gap-3 py-4 rounded-xl transition shadow-sm ">
-              Login
-             </NuxtLink>
 
-             
+              <button type="submit" class="w-full bg-primary text-white font-bold py-4 rounded-md hover:bg-accent transition-colors mt-4">
+              Log in
+             </button>
           </form>
 
-          <div class="relative my-8">
-            <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-gray-800"></div></div>
-            <div class="relative flex justify-center text-xs uppercase"><span class="bg-[#1c252e] px-4 text-gray-500">Or continue with</span></div>
-          </div>
-
-          <div class="grid grid-cols-2 gap-4">
-            <NuxtLink to="/Apple"  class="flex w-105 items-center justify-center gap-3 bg-white text-gray-900 py-4 rounded-xl hover:bg-gray-100 transition shadow-sm font-medium">
-              <img src="https://www.svgrepo.com/show/355037/google.svg" class="w-5 h-5" alt="Google" />
-              Google
-             </NuxtLink>
-            
-          </div>
-
-          <p class="mt-10 text-center text-gray-400 text-sm">
-            Don't have an account?             
-            <NuxtLink to="/Signup" href="#" class="text-teal-400 font-bold hover:underline">Sign up</NuxtLink>
+          <p class="mt-8 text-center md:text-left text-white font-medium">
+            Not registered? 
+            <a href="#" class="text-primary font-bold underline decoration-black underline-offset-4">Create an Account</a>
           </p>
         </div>
       </div>
+
     </div>
   </div>
 </template>
+
+
+

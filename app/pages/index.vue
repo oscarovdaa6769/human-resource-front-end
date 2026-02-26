@@ -371,13 +371,12 @@
         <div class="w-full bg-accent py-6 ">
             <div class="container mx-auto flex gap-4 items-center justify-center">
 
-            <!-- Dropdown Item -->
             <div
                 v-for="(menu, index) in menus"
                 :key="index"
                 class="relative"
             >
-                <!-- Button -->
+               
                 <button
                 @click="toggle(index)"
                 class="flex items-center gap-2 px-6 py-3 rounded-xl border border-white/30 text-white hover:bg-white/10 transition"
@@ -394,7 +393,7 @@
                 </svg>
                 </button>
 
-                <!-- Dropdown -->
+                
                 <div
                 v-if="openIndex === index"
                 class="absolute left-0 mt-3 w-80 bg-gray-100 text-gray-800 rounded-2xl shadow-lg p-4 z-50"
@@ -445,6 +444,8 @@ const blogPosts = [
   }
   
 ];
+
+
 
 
 
