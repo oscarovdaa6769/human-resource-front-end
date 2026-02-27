@@ -217,3 +217,6 @@ import baseBtn from '~/components/baseBtn.vue';
     </div>
   </div>
 </template>
+
+
+

@@ -1,3 +1,4 @@
+
 <template>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <section class="relative w-full min-h-[500px] bg-gray-900">
