@@ -9,25 +9,25 @@ const password = ref('');
 const rememberMe = ref(false);
 
 const handleLogin = () => {
-  console.log('Logging in with:', { 
-    email: email.value, 
-    password: password.value, 
-    remember: rememberMe.value 
+  console.log('Logging in with:', {
+    email: email.value,
+    password: password.value,
+    remember: rememberMe.value
   });
 };
 </script>
 
 <template>
   <div class="min-h-screen bg-secondary flex items-center justify-center p-4 md:p-10 font-sans mt-15">
-    
+
     <div class="flex flex-col md:flex-row w-full max-w-6xl bg-[#1c252e] rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/5">
-      
+
       <div class="relative w-full md:w-1/2 min-h-[500px] flex flex-col justify-between p-12 text-white">
           <div class="absolute inset-0 z-0">
-            <img 
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80" 
-              alt="HR Team" 
-              class="w-full h-full object-cover" 
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
+              alt="HR Team"
+              class="w-full h-full object-cover"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-[#1c252e] via-black/20 to-black/40"></div>
           </div>
@@ -51,7 +51,7 @@ const handleLogin = () => {
 
       <div class="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-24 py-12 bg-highlight">
         <div class="max-w-md w-full mx-auto md:ml-0">
-        
+
 
           <h2 class="text-4xl font-bold mb-2 text-primary">Welcome Back</h2>
           <p class="text-white mb-8 font-medium">Find the job made for you!</p>
@@ -68,19 +68,19 @@ const handleLogin = () => {
           </div>
 
           <form @submit.prevent="handleLogin" class="space-y-4">
-            <input 
+            <input
               v-model="email"
-              type="email" 
-              placeholder="Email" 
+              type="email"
+              placeholder="Email"
               class="w-full border-2 border-accent text-white rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
             />
-            <input 
+            <input
               v-model="password"
-              type="password" 
-              placeholder="Password" 
+              type="password"
+              placeholder="Password"
               class="w-full border-2 border-accent text-white rounded-md px-4 py-3 focus:outline-none focus:ring-2  focus:ring-accent  focus:border-transparent transition-all"
             />
-            
+
             <div class="text-right">
               <a href="#" class="text-sm font-semibold text-white underline decoration-gray-400 underline-offset-4 hover:text-black">Forgot password?</a>
             </div>
@@ -91,8 +91,8 @@ const handleLogin = () => {
           </form>
 
           <p class="mt-8 text-center md:text-left text-white font-medium">
-            Not registered? 
-            <a href="#" class="text-primary font-bold underline decoration-black underline-offset-4">Create an Account</a>
+            Not registered?
+            <a href="/sign-up" class="text-primary font-bold underline decoration-black underline-offset-4">Create an Account</a>
           </p>
         </div>
       </div>

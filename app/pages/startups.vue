@@ -1,14 +1,14 @@
 <template>
 
   <main class="max-w-7xl mx-auto px-6 py-12 antialiased selection:bg-indigo-100">
-    
+
     <header class="text-center mb-16">
       <h1 class="text-5xl font-[900] tracking-tight mb-8 text-slate-900">Discover</h1>
-      <nav class="inline-flex p-1 bg-slate-100 rounded-full border border-slate-200">
-                <NuxtLink to="/discover" class="px-8 py-2.5 rounded-full text-sm font-bold text-slate-600 hover:text-black transition-all">All</NuxtLink>
-                <NuxtLink to="/startups" class="px-8 py-2.5 rounded-full text-sm font-bold text-[#000000] hover:text-secondary transition-all bg-secondary">Startups</NuxtLink>
-                <NuxtLink to="/blog" class="px-8 py-2.5 rounded-full text-sm font-bold text-slate-600 hover:text-black transition-all">Blog</NuxtLink>
-        
+      <nav class="inline-flex p-1 bg-highlight rounded-full border border-slate-200">
+                <NuxtLink to="/discover" class="px-8 py-2.5 rounded-full text-sm font-bold text-[#fff] hover:text-primary transition-all">All</NuxtLink>
+        <NuxtLink to="/startups" class="px-8 py-2.5 rounded-full text-sm font-bold text-[#fff] hover:text-primary transition-all bg-secondary">Startups</NuxtLink>
+        <NuxtLink to="/blog" class="px-8 py-2.5 rounded-full text-sm font-bold text-[#fff] hover:text-primary transition-all">Blog</NuxtLink>
+
       </nav>
     </header>
 
@@ -23,7 +23,7 @@
     <!-- Card 1 -->
     <div class="bg-white/8 rounded-xl p-6 shadow hover:shadow-lg transition">
 
-      <img 
+      <img
         src="https://i.pinimg.com/1200x/8c/65/b9/8c65b957b081443c80350e68df132119.jpg"
         class="w-14 h-14 rounded-lg mb-4"
       />
@@ -41,7 +41,7 @@
     <!-- Card 2 -->
     <div class="bg-white/8 rounded-xl p-6 shadow hover:shadow-lg transition">
 
-      <img 
+      <img
         src="https://i.pinimg.com/1200x/b8/28/1d/b8281d3f3eb0cefa7a539f2c4ccf9b84.jpg"
         class="w-14 h-14 rounded-lg mb-4"
       />
@@ -59,7 +59,7 @@
     <!-- Card 3 -->
     <div class="bg-white/8 rounded-xl p-6 shadow hover:shadow-lg transition">
 
-      <img 
+      <img
         src="https://i.pinimg.com/1200x/46/83/ff/4683ffca76bc1b5f94004d6046f1181d.jpg"
         class="w-14 h-14 rounded-lg mb-4"
       />
@@ -76,7 +76,7 @@
     <!-- Card 4 -->
     <div class="bg-white/8 rounded-xl p-6 shadow hover:shadow-lg transition">
 
-      <img 
+      <img
         src="https://i.pinimg.com/1200x/d0/d5/1a/d0d51a9891442e8aeb425b537d5fd664.jpg"
         class="w-14 h-14 rounded-lg mb-4"
       />
@@ -95,7 +95,7 @@
     <!-- Card 5 -->
     <div class="bg-white/8 rounded-xl p-6 shadow hover:shadow-lg transition">
 
-      <img 
+      <img
         src="https://i.pinimg.com/736x/b8/52/49/b852490ea1d90977b6ef23a3d0a93c70.jpg"
         class="w-14 h-14 rounded-lg mb-4"
       />
@@ -113,7 +113,7 @@
     <!-- Card 6 -->
     <div class="bg-white/8 rounded-xl p-6 shadow hover:shadow-lg transition">
 
-      <img 
+      <img
         src="https://i.pinimg.com/1200x/ef/23/f7/ef23f7ac15dd7e2f8c545649503f1c71.jpg"
         class="w-14 h-14 rounded-lg mb-4"
       />
@@ -132,11 +132,11 @@
 </section>
 
 
-<!-- 
+<!--
 fillter -->
 
 <div class="w-full banner">
-        
+
         <div class="w-full bg-primary/10 py-6 rounded-2xl">
             <div class="container mx-auto flex gap-4 items-center justify-center">
 
@@ -186,7 +186,7 @@ fillter -->
 
 
 
-    
+
   </main>
 </template>
 

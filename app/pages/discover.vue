@@ -82,14 +82,14 @@ const menus = [
 
 <template>
   <main class="max-w-7xl mx-auto px-6 py-12 antialiased selection:bg-indigo-100">
-    
+
     <header class="text-center mb-16">
       <h1 class="text-5xl font-[900] tracking-tight mb-8 text-slate-900">Discover</h1>
-      <nav class="inline-flex p-1 bg-slate-100 rounded-full border border-slate-200">
-        <NuxtLink to="/" class="px-8 py-2.5 rounded-full text-sm font-bold text-[#000000] hover:text-secondary transition-all bg-secondary">All</NuxtLink>
-        <NuxtLink to="/startups" class="px-8 py-2.5 rounded-full text-sm font-bold text-slate-600 hover:text-black transition-all">Startups</NuxtLink>
-        <NuxtLink to="/blog" class="px-8 py-2.5 rounded-full text-sm font-bold text-slate-600 hover:text-black transition-all">Blog</NuxtLink>
-        
+      <nav class="inline-flex p-1 bg-highlight rounded-full border border-slate-200">
+        <NuxtLink to="/" class="px-8 py-2.5 rounded-full text-sm font-bold text-[#fff] hover:text-primary transition-all bg-secondary">All</NuxtLink>
+        <NuxtLink to="/startups" class="px-8 py-2.5 rounded-full text-sm font-bold text-[#fff] hover:text-primary transition-all">Startups</NuxtLink>
+        <NuxtLink to="/blog" class="px-8 py-2.5 rounded-full text-sm font-bold text-[#fff] hover:text-primary transition-all">Blog</NuxtLink>
+
       </nav>
     </header>
 
@@ -99,7 +99,7 @@ const menus = [
         <span class="text-xl font-black italic tracking-tighter ml-5">Trending stories, startups to watch, what's next in tech, & so much more...</span>
 
         </div>
-      
+
       <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10">
         <div class="flex flex-col items-center lg:items-start gap-1 lg:border-r lg:border-white/10 lg:pr-12">
           <span class="text-3xl font-black italic tracking-tighter">PEOPLESULUTION</span>
@@ -109,8 +109,8 @@ const menus = [
     </section>
 
     <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-      
-      <div v-for="article in articles" :key="article.title" 
+
+      <div v-for="article in articles" :key="article.title"
         class="break-inside-avoid group bg-white/10 border border-slate-200 rounded-[2.5rem] overflow-hidden hover:border-indigo-500 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary">
         <img :src="article.image" class="w-full h-56 object-cover grayscale-[40%] group-hover:grayscale-0 transition-all duration-700" />
         <div class="p-8">
@@ -159,13 +159,13 @@ const menus = [
 
     </div>
 
- 
-   
+
+
    <!-- fillter -->
 
 
 <div class="w-full banner">
-        
+
         <div class="w-full bg-primary/10 py-6 rounded-2xl ">
             <div class="container mx-auto flex gap-4 items-center justify-center">
 
@@ -216,7 +216,7 @@ const menus = [
 
 
 
-    
+
 
   </main>
 </template>
