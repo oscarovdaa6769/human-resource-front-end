@@ -97,15 +97,15 @@
 
         <div class="space-y-1">
           <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors tracking-tight">
-            Email Growth & v-for Infrastructure Lead
+            
           </h3>
-          <div class="flex flex-wrap items-center gap-2 text-sm">
-            <span class="font-semibold text-gray-700">Edit on the Spot</span>
+          <div class="flex flex-wrap items-center gap-2 text-sm" v-for="data in recruiters">
+            <span class="font-semibold text-gray-700">{{ data.tittle }}</span>
             <span class="text-gray-300">•</span>
-            <span class="text-gray-500">Remote only • Everywhere</span>
+            <span class="text-gray-500">{{ data.section }}</span>
             <span class="hidden md:inline text-gray-300">•</span>
-            <span class="px-2 py-0.5 text-emerald-700 font-bold rounded-md  border-emerald-100">
-              $25k – $30k
+            <span class="px-2 py-0.5 text-emerald-700 font-bold rounded-md  border-emerald-100" >
+              {{ data.salary_range }}
             </span>
             <span class="text-xs text-gray-400 font-medium">yesterday</span>
           </div>
@@ -758,21 +758,21 @@ const menus = [
 ];
 
 
-// import axios from 'axios'
+import axios from 'axios'
 
 
-// const config = {
-//   headers: {
-//     Authorization: 'Bearer 26753a48380e4da090f8b327f97bdb263af4f0476e49516a894a7d30c5f7d94f9e8d168198abbfd7c018116fca3ebd942ea5ed9559e284ee1576bdb711db5c58142a22b240a34d8df4f0752616f40a95efffcb3301f55bea80e14804d27bd76602315765c62391189c8c614120f19ad3f9bf9b5e9c1a5e7ac541231273dc5ba5'
+const config = {
+  headers: {
+    Authorization: 'Bearer 26753a48380e4da090f8b327f97bdb263af4f0476e49516a894a7d30c5f7d94f9e8d168198abbfd7c018116fca3ebd942ea5ed9559e284ee1576bdb711db5c58142a22b240a34d8df4f0752616f40a95efffcb3301f55bea80e14804d27bd76602315765c62391189c8c614120f19ad3f9bf9b5e9c1a5e7ac541231273dc5ba5'
 
 
-//   }
-// };
+  }
+};
 
 
-// const dataFetch = await axios.get('http://localhost:1337/api/recruiters',config);
-// const jobPostingdatas = dataFetch.data.data;
-// console.log(jobPostingdatas);
+const dataFetch = await axios.get('http://localhost:1337/api/recruiters',config);
+const recruiters = dataFetch.data.data;
+console.log(recruiters);
 
 
 </script>
