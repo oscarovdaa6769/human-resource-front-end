@@ -40,12 +40,12 @@
         Where startups and job seekers connect
       </h1>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <NuxtLink  to="/find-next-job"
+        <NuxtLink  to="/find-next-hire"
           class="bg-primary text-secondary px-8 py-4 rounded-full text-lg font-medium hover:bg-accent hover:text-white transition"
         >
           Find your next hire
          </NuxtLink>
-        <NuxtLink  to="/find-next-hire"
+        <NuxtLink  to="/find-next-job"
           class="border-2 border-primary text-primary px-8 py-4 rounded-full text-lg font-medium hover:bg-accent transition hover:text-white"
         >
           Find your next job

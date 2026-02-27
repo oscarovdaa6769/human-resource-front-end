@@ -10,7 +10,7 @@ import baseBtn from '~/components/baseBtn.vue';
       <p class="uppercase text-primary font-black">Get started in 10 minutes or less</p>
       <div class="flex items-center gap-4">
         <NuxtLink to="/candidate-profile" class="text-[#000] hover:text-[#fff] border-2 border-primary bg-primary hover:bg-accent hover:border-accent rounded-full px-4 py-2 transition-all duration-300 ease-in-out w-[200px] text-center">Sign up now</NuxtLink>
-        <NuxtLink to="/schedule" class=" border-2 border-primary text-primary rounded-full px-4 py-2 hover:border-accent hover:bg-accent hover:text-[#fff] transition-all duration-300 ease-in-out w-[200px] text-center ">Schedule a demo</NuxtLink>
+        <NuxtLink to="/post-a-job" class=" border-2 border-primary text-primary rounded-full px-4 py-2 hover:border-accent hover:bg-accent hover:text-[#fff] transition-all duration-300 ease-in-out w-[200px] text-center ">Job listings</NuxtLink>
       </div>
       <div class="flex items-center justify-between w-full px-15">
         <div class="flex flex-col items-center">
