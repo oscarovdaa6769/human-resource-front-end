@@ -9,7 +9,7 @@ import baseBtn from './baseBtn.vue';
       <nav class="header-nav flex gap-4">
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/discover">Discover</NuxtLink>
-        <NuxtLink to="/find-next-job">For Job Seeker</NuxtLink>
+        <NuxtLink to="/companies-page">For Job Seeker</NuxtLink>
         <NuxtLink to="/find-next-hire">For Companies</NuxtLink>
       </nav>
       <div class="flex gap-2 items-center">
