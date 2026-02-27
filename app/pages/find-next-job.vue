@@ -5,7 +5,8 @@
 <!-- banner and search -->
 
 <section
-  class="relative h-[500px] flex items-center justify-center text-white banner">
+  class=" h-[500px] flex items-center justify-center text-white w-full banner">
+
 
   <img
     src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
@@ -58,11 +59,13 @@
         </select>
       </div>
 
-      <button
-        class="bg-primary text-black px-8 py-3 rounded-xl hover:bg-secondary transition text-[#000000]"
-      >
-        Search
-      </button>
+         <NuxtLink
+            to="/skills"
+            class="inline-flex items-center justify-center rounded-xl bg-white px-8 py-4 text-base font-bold text-black transition-all hover:bg-secondary hover:ring-4 hover:ring-blue-100 active:scale-95"
+          >
+            Search
+           
+          </NuxtLink>
 
     </div>
 
@@ -76,9 +79,9 @@
 
 <!-- job list -->
 
-<section class="w-[1820px] ">
+<section class="mx-auto max-w-5xl px-4 py-12 ">
 
-  <div class="max-w-4xl p-4 ml-110">
+  <div class="max-w-4xl  p-4 mx-auto ml-5 ">
     <BR></BR><BR></BR>
     <h1 class="text-2xl font-bold text-white mb-4">Trending startup jobs</h1>
     <div class="group flex flex-col md:flex-row items-start md:items-center justify-between p-6 bg-white/8 border border-gray-200 rounded-3xl hover:border-primary hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] transition-all duration-300 gap-6">
@@ -94,7 +97,7 @@
 
         <div class="space-y-1">
           <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors tracking-tight">
-            Email Growth & Outreach Infrastructure Lead
+            Email Growth & v-for Infrastructure Lead
           </h3>
           <div class="flex flex-wrap items-center gap-2 text-sm">
             <span class="font-semibold text-gray-700">Edit on the Spot</span>
@@ -110,12 +113,25 @@
       </div>
 
       <div class="flex items-center gap-3 mt-6 md:mt-0 w-full md:w-auto">
-        <button class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95">
-          Save
-        </button>
-        <button class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95">
+       
+         <NuxtLink
+            to="/sign-up"
+            class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95"
+          >
+            Save
+         
+          </NuxtLink>
+         <NuxtLink
+            to="/apply"
+            class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95"
+          >
+            Apply
+         
+          </NuxtLink>
+
+        <!-- <button class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95">
           Apply
-        </button>
+        </button> -->
       </div>
 
     </div>
@@ -149,12 +165,20 @@
       </div>
 
       <div class="flex items-center gap-3 mt-6 md:mt-0 w-full md:w-auto">
-        <button class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95">
-          Save
-        </button>
-        <button class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95">
-          Apply
-        </button>
+           <NuxtLink
+            to="/sign-up"
+            class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95"
+          >
+            Save
+         
+          </NuxtLink>
+         <NuxtLink
+            to="/apply"
+            class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95"
+          >
+            Apply
+         
+          </NuxtLink>
       </div>
 
     </div>
@@ -190,12 +214,20 @@
       </div>
 
       <div class="flex items-center gap-3 mt-6 md:mt-0 w-full md:w-auto">
-        <button class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95">
-          Save
-        </button>
-        <button class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95">
-          Apply
-        </button>
+           <NuxtLink
+            to="/sign-up"
+            class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95"
+          >
+            Save
+         
+          </NuxtLink>
+         <NuxtLink
+            to="/apply"
+            class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95"
+          >
+            Apply
+         
+          </NuxtLink>
       </div>
 
     </div>
@@ -233,12 +265,20 @@
       </div>
 
       <div class="flex items-center gap-3 mt-6 md:mt-0 w-full md:w-auto">
-        <button class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95">
-          Save
-        </button>
-        <button class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95">
-          Apply
-        </button>
+           <NuxtLink
+            to="/sign-up"
+            class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95"
+          >
+            Save
+         
+          </NuxtLink>
+         <NuxtLink
+            to="/apply"
+            class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95"
+          >
+            Apply
+         
+          </NuxtLink>
       </div>
 
     </div>
@@ -275,12 +315,20 @@
       </div>
 
       <div class="flex items-center gap-3 mt-6 md:mt-0 w-full md:w-auto">
-        <button class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95">
-          Save
-        </button>
-        <button class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95">
-          Apply
-        </button>
+           <NuxtLink
+            to="/sign-up"
+            class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95"
+          >
+            Save
+         
+          </NuxtLink>
+         <NuxtLink
+            to="/apply"
+            class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95"
+          >
+            Apply
+         
+          </NuxtLink>
       </div>
 
     </div>
@@ -292,7 +340,7 @@
 
 
 
-<section class="w-[1820px] ">
+<section class="mx-auto max-w-5xl px-4 py-12 ">
 
   <div class="max-w-4xl  p-4 mx-auto ml-5 ">
     <BR></BR><BR></BR>
@@ -326,12 +374,20 @@
       </div>
 
       <div class="flex items-center gap-3 mt-6 md:mt-0 w-full md:w-auto">
-        <button class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95">
-          Save
-        </button>
-        <button class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95">
-          Apply
-        </button>
+           <NuxtLink
+            to="/sign-up"
+            class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95"
+          >
+            Save
+         
+          </NuxtLink>
+         <NuxtLink
+            to="/apply"
+            class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95"
+          >
+            Apply
+         
+          </NuxtLink>
       </div>
 
     </div>
@@ -365,12 +421,20 @@
       </div>
 
       <div class="flex items-center gap-3 mt-6 md:mt-0 w-full md:w-auto">
-        <button class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95">
-          Save
-        </button>
-        <button class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95">
-          Apply
-        </button>
+          <NuxtLink
+            to="/sign-up"
+            class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95"
+          >
+            Save
+         
+          </NuxtLink>
+         <NuxtLink
+            to="/apply"
+            class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95"
+          >
+            Apply
+         
+          </NuxtLink>
       </div>
 
     </div>
@@ -406,12 +470,20 @@
       </div>
 
       <div class="flex items-center gap-3 mt-6 md:mt-0 w-full md:w-auto">
-        <button class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95">
-          Save
-        </button>
-        <button class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95">
-          Apply
-        </button>
+          <NuxtLink
+            to="/sign-up"
+            class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95"
+          >
+            Save
+         
+          </NuxtLink>
+         <NuxtLink
+            to="/apply"
+            class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95"
+          >
+            Apply
+         
+          </NuxtLink>
       </div>
 
     </div>
@@ -449,12 +521,20 @@
       </div>
 
       <div class="flex items-center gap-3 mt-6 md:mt-0 w-full md:w-auto">
-        <button class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95">
-          Save
-        </button>
-        <button class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95">
-          Apply
-        </button>
+         <NuxtLink
+            to="/sign-up"
+            class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95"
+          >
+            Save
+         
+          </NuxtLink>
+         <NuxtLink
+            to="/apply"
+            class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95"
+          >
+            Apply
+         
+          </NuxtLink>
       </div>
 
     </div>
@@ -491,12 +571,20 @@
       </div>
 
       <div class="flex items-center gap-3 mt-6 md:mt-0 w-full md:w-auto">
-        <button class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95">
-          Save
-        </button>
-        <button class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95">
-          Apply
-        </button>
+          <NuxtLink
+            to="/sign-up"
+            class="flex-1 md:flex-none px-6 py-2.5 text-sm font-bold text-gray-700 bg-gray-50 border border-gray-200 rounded-xl hover:bg-white hover:border-gray-400 transition-all active:scale-95"
+          >
+            Save
+         
+          </NuxtLink>
+         <NuxtLink
+            to="/apply"
+            class="flex-1 md:flex-none px-8 py-2.5 text-sm font-bold text-white bg-black rounded-xl hover:bg-secondary shadow-lg shadow-black/5 transition-all active:scale-95"
+          >
+            Apply
+         
+          </NuxtLink>
       </div>
 
     </div>
@@ -532,7 +620,7 @@
         
         <div class="flex flex-wrap gap-4">
           <NuxtLink
-            to="/signup"
+            to="/sign-up"
             class="inline-flex items-center justify-center rounded-xl bg-black px-8 py-4 text-base font-bold text-white transition-all hover:bg-secondary hover:ring-4 hover:ring-blue-100 active:scale-95"
           >
             Create your profile
@@ -552,88 +640,142 @@
 fillter -->
 
  
-  <section class="flex item-center ">
-
-     <div class="flex-1 mb-40 ml-10 mt-20 ">
-        <select class="w-50 h-10 border rounded-sm px-4 py-2 outline-none text-[#ffffff] bg-secondary">
-          <option>featured List</option>
-          <option>Remote First Future  Jobs</option>
-          <option>Jobs for Bootcamp Grads</option>
-          <option>Junior Software Enginneer</option>
-          <option>Crypto statups To watch our For</option>
-          <option>Designer</option>
+<div class="w-full banner">
         
-        </select>
-      </div>
+        <div class="w-full bg-accent/10 py-6 ">
+            <div class="container mx-auto flex gap-4 items-center justify-center">
 
+            <!-- Dropdown Item -->
+            <div
+                v-for="(menu, index) in menus"
+                :key="index"
+                class="relative"
+            >
+                <!-- Button -->
+                <button
+                @click="toggle(index)"
+                class="flex items-center gap-2 px-6 py-3 rounded-xl border border-white/30 text-white hover:bg-white/10 transition"
+                >
+                {{ menu.title }}
+                <svg
+                    :class="{ 'rotate-180': openIndex === index }"
+                    class="w-4 h-4 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+                </button>
 
+                <!-- Dropdown -->
+                <div
+                v-if="openIndex === index"
+                class="absolute left-0 mt-3 w-80 bg-gray-100 text-gray-800 rounded-2xl shadow-lg p-4 z-50"
+                >
+                <ul class="space-y-2">
+                    <li
+                    v-for="item in menu.items"
+                    :key="item"
+                    class="px-3 py-2 rounded-lg hover:bg-gray-200 hover:text-accent cursor-pointer"
+                    >
+                    {{ item }}
+                    </li>
+                </ul>
+                </div>
+            </div>
 
-         <div class="flex-1 mb-40 ml-10 mt-20 ">
-        <select class="w-50 h-10 border rounded-sm px-4 py-2 outline-none text-[#ffffff] bg-secondary">
-          <option>Remote Jobs</option>
-          <option>Remote product manager jobs</option>
-          <option>Remote Data Analyst jobs</option>
-          <option>Remote Designer Jobs</option>
-          <option>Remote Marketing Jobs</option>
-        
-        </select>
-      </div>
-
-
-
-         <div class="flex-1 mb-40 ml-10 mt-20 ">
-        <select class="w-50 h-10 border rounded-sm px-4 py-2 outline-none text-[#ffffff] bg-secondary">
-          <option>Job by location</option>
-          <option>Phnom Penh</option>
-          <option>Seim Reab</option>
-          <option>Battom bong</option>
-          <option>Kompong spue</option>
-          <option>Preyveng</option>
-        
-        </select>
-      </div>
-
-
-
-
-         <div class="flex-1 mb-40 ml-10 mt-20 ">
-        <select class="w-50 h-10 border rounded-sm px-4 py-2 outline-none text-[#ffffff] bg-secondary">
-          <option>Job by role</option>
-          <option>IT</option>
-          <option>Full stack Engineer</option>
-          <option>Frontend Engineer</option>
-          <option>Backend Engineer</option>
-          <option>Designer</option>
-        
-        </select>
-      </div>
-
-
-         <div class="flex-1 mb-40 ml-10 mt-20 ">
-        <select class="w-50 h-10 border rounded-sm px-4 py-2 outline-none text-[#ffffff] bg-secondary">
-          <option>Job by role&Location</option>
-          <option>Frontend + Phnom Penh</option>
-          <option>Backend + Remote</option>
-          <option>Designer + Singapore</option>
-          <option>Backend Engineer + China</option>
-          <option>Designer + USA</option>
-        
-        </select>
-      </div>
-
-
-
-
-      
-
-
-
-      
-
-
-
-      
-
-  </section>
+            </div>
+        </div>
+    </div>
 
 </template>
+
+
+
+<script setup>
+import { ref } from "vue";
+
+const openIndex = ref(null);
+
+const toggle = (index) => {
+  openIndex.value = openIndex.value === index ? null : index;
+};
+
+const menus = [
+  {
+    title: "Job Collections",
+    items: [
+      "Remote First Future Jobs",
+      "Jobs for Bootcamp Grads",
+      "Junior Software Engineer Jobs",
+      "Crypto Startups to Watch Out for",
+      "Blockchain Startups That Are Hiring",
+      "Companies Hiring Amidst Layoffs",
+      "Hot Consumer Fintech Startups",
+      "Y Combinator Startup Jobs",
+      "Startup Jobs in Bay Area",
+      "Top Women-Led Startups",
+      "More Job Collections",
+    ],
+  },
+  {
+    title: "Remote Jobs",
+    items: [
+      "Remote Engineering Jobs",
+      "Remote Design Jobs",
+      "Remote Marketing Jobs",
+      "Remote Product Jobs",
+    ],
+  },
+  {
+    title: "Jobs by Location",
+    items: [
+      "USA Jobs",
+      "Europe Jobs",
+      "Asia Jobs",
+      "Remote Worldwide",
+    ],
+  },
+  {
+    title: "Jobs by Role",
+    items: [
+      "Frontend Developer",
+      "Backend Developer",
+      "Fullstack Developer",
+      "UI/UX Designer",
+    ],
+  },
+  {
+    title: "Jobs by Role & Location",
+    items: [
+      "Frontend in USA",
+      "Backend in Europe",
+      "Designer in Asia",
+      "Remote Fullstack",
+    ],
+  },
+];
+
+
+// import axios from 'axios'
+
+
+// const config = {
+//   headers: {
+//     Authorization: 'Bearer 26753a48380e4da090f8b327f97bdb263af4f0476e49516a894a7d30c5f7d94f9e8d168198abbfd7c018116fca3ebd942ea5ed9559e284ee1576bdb711db5c58142a22b240a34d8df4f0752616f40a95efffcb3301f55bea80e14804d27bd76602315765c62391189c8c614120f19ad3f9bf9b5e9c1a5e7ac541231273dc5ba5'
+
+
+//   }
+// };
+
+
+// const dataFetch = await axios.get('http://localhost:1337/api/recruiters',config);
+// const jobPostingdatas = dataFetch.data.data;
+// console.log(jobPostingdatas);
+
+
+</script>
+
+
+
