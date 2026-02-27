@@ -62,7 +62,7 @@
       </div>
 
          <NuxtLink
-            to="/skills"
+            to="/"
             class="inline-flex items-center justify-center rounded-xl bg-white px-8 py-4 text-base font-bold text-black transition-all hover:bg-secondary hover:ring-4 hover:ring-blue-100 active:scale-95"
           >
             Search
