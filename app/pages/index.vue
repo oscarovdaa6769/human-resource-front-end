@@ -24,7 +24,7 @@
         </p>
 
         <div class="flex gap-4">
-           <NuxtLink  to="/send cv"
+           <NuxtLink  to="/candidate-profile"
             class="bg-primary hover:bg-accent text-[#000] hover:text-[#fff] px-6 py-3 rounded-full font-medium transition"> Send Cv →
             </NuxtLink>
 
@@ -40,12 +40,12 @@
         Where startups and job seekers connect
       </h1>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <NuxtLink  to="/Find your next hire"
+        <NuxtLink  to="/find-next-job"
           class="bg-primary text-secondary px-8 py-4 rounded-full text-lg font-medium hover:bg-accent hover:text-white transition"
         >
           Find your next hire
          </NuxtLink>
-        <NuxtLink  to="/Find your next job"
+        <NuxtLink  to="/find-next-hire"
           class="border-2 border-primary text-primary px-8 py-4 rounded-full text-lg font-medium hover:bg-accent transition hover:text-white"
         >
           Find your next job
@@ -129,7 +129,7 @@
           <NuxtLink  to="/Learn more"class="px-6 py-3  border-2 border-primary hover:bg-accent hover:text-secondary rounded-lg font-medium ">
             Learn more
           </NuxtLink>
-          <NuxtLink  to="/Sign up"class="px-6 py-3  bg-primary hover:bg-accent  text-[#000] hover:text-[#fff] rounded-lg font-medium">
+          <NuxtLink  to="/candidate-profile"class="px-6 py-3  bg-primary hover:bg-accent  text-[#000] hover:text-[#fff] rounded-lg font-medium">
             Sign up
           </NuxtLink>
         </div>
@@ -185,7 +185,7 @@
             <NuxtLink  to="/Learn more"class="px-6 py-3  border-2 border-primary hover:bg-accent hover:text-secondary rounded-lg font-medium ">
             Learn more
           </NuxtLink>
-          <NuxtLink  to="/Sign up"class="px-6 py-3  bg-primary hover:bg-accent  text-[#000] hover:text-[#fff] rounded-lg font-medium">
+          <NuxtLink  to="/candidate-profile"class="px-6 py-3  bg-primary hover:bg-accent  text-[#000] hover:text-[#fff] rounded-lg font-medium">
             Sign up
           </NuxtLink>
         </div>

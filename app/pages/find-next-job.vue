@@ -622,7 +622,7 @@
 
         <div class="flex flex-wrap gap-4">
           <NuxtLink
-            to="/sign-up"
+            to="/candidate-profile"
             class="inline-flex items-center justify-center rounded-xl bg-black px-8 py-4 text-base font-bold text-white transition-all hover:bg-secondary hover:ring-4 hover:ring-blue-100 active:scale-95"
           >
             Create your profile

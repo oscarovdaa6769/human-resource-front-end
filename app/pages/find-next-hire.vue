@@ -9,7 +9,7 @@ import baseBtn from '~/components/baseBtn.vue';
       <h2 class="text-[#fff] text-7xl font-black text-center">The all-in-one platform to find, connect & hire your team</h2>
       <p class="uppercase text-primary font-black">Get started in 10 minutes or less</p>
       <div class="flex items-center gap-4">
-        <NuxtLink to="/sign-up" class="text-[#000] hover:text-[#fff] border-2 border-primary bg-primary hover:bg-accent hover:border-accent rounded-full px-4 py-2 transition-all duration-300 ease-in-out w-[200px] text-center">Sign up now</NuxtLink>
+        <NuxtLink to="/candidate-profile" class="text-[#000] hover:text-[#fff] border-2 border-primary bg-primary hover:bg-accent hover:border-accent rounded-full px-4 py-2 transition-all duration-300 ease-in-out w-[200px] text-center">Sign up now</NuxtLink>
         <NuxtLink to="/schedule" class=" border-2 border-primary text-primary rounded-full px-4 py-2 hover:border-accent hover:bg-accent hover:text-[#fff] transition-all duration-300 ease-in-out w-[200px] text-center ">Schedule a demo</NuxtLink>
       </div>
       <div class="flex items-center justify-between w-full px-15">
