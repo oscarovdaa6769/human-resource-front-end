@@ -1,4 +1,6 @@
 <script setup>
+import { modal } from '#build/ui'
+
 useHead({
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
@@ -23,6 +25,14 @@ useSeoMeta({
   twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
   twitterCard: 'summary_large_image'
 })
+
+function showText() {
+  console.log('okeii bro');
+  onMounted : {
+    showText();
+  }
+}
+
 </script>
 
 <template>
