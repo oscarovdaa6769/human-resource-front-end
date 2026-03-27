@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+
 @theme static {
   --font-sans: "Epilogue", sans-serif;
 
@@ -17,21 +18,18 @@
 .header-nav a:hover {
   color: var(--color-primary);
   text-decoration: underline;
-}
+}z
 
 .footer-nav a {
   transition: all 300ms ease;
 }
 
-.footer-nav a:hover {
-  color: var(--color-primary);
-  text-decoration: underline;
-}
 
 .container {
   width: 1280px;
   margin: 0 auto;
 }
+
 
 .banner {
   margin-top: 100px;
